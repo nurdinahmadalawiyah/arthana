@@ -4,6 +4,14 @@
     "strict": true,
     "paths": {
       "@/*": ["./src/*"],
+      "@core": ["./src/core"],
+      "@core/*": ["./src/core/*"],
+      "@domain": ["./src/domain"],
+      "@domain/*": ["./src/domain/*"],
+      "@data": ["./src/data"],
+      "@data/*": ["./src/data/*"],
+      "@presentation": ["./src/presentation"],
+      "@presentation/*": ["./src/presentation/*"],
       "@/assets/*": ["./assets/*"]
     }
   },

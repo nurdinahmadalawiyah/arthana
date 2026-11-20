@@ -15,17 +15,31 @@ export default function TabsLayout(): JSX.Element {
   return (
     <Tabs screenOptions={{ headerShown: false }}>
       <Tabs.Screen
-        name="index"
+        name="dashboard"
         options={{
-          title: "Home",
+          title: "Dashboard",
           tabBarIcon: ({ color }) => <TabIcon name="home-outline" color={color} />,
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="transactions"
         options={{
-          title: "Explore",
-          tabBarIcon: ({ color }) => <TabIcon name="compass-outline" color={color} />,
+          title: "Transactions",
+          tabBarIcon: ({ color }) => <TabIcon name="list-outline" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="goals"
+        options={{
+          title: "Goals",
+          tabBarIcon: ({ color }) => <TabIcon name="flag-outline" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="gold-vault"
+        options={{
+          title: "Gold Vault",
+          tabBarIcon: ({ color }) => <TabIcon name="bar-chart-outline" color={color} />,
         }}
       />
     </Tabs>

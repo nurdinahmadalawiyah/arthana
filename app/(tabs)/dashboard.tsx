@@ -41,7 +41,7 @@ export default function HomeTab(): JSX.Element {
           A modern starter for React Native, preconfigured with HeroUI Native, Uniwind, and Expo
           Router. Edit{" "}
           <Typography.Paragraph className="font-semibold">
-            app/(tabs)/index.tsx
+            app/(tabs)/dashboard.tsx
           </Typography.Paragraph>{" "}
           and watch it reload.
         </Typography.Paragraph>
