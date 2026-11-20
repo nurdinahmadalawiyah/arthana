@@ -80,34 +80,61 @@ Ringkasan evaluasi mingguan dengan *copywriting* bergaya Gen Z yang santai dan t
 
 Proyek ini menerapkan pemisahan tanggung jawab (*Separation of Concerns*) menggunakan **Clean Architecture 3 Layer** agar kode mudah diuji, skalabel, dan terbebas dari ketergantungan framework pada logika bisnis inti.
 
-```text
+```
 arthana/
 ├── app/                                # Expo Router (Entry point navigasi saja)
 │   ├── _layout.tsx                     # Root Provider (HeroUINativeProvider, GestureHandler)
 │   ├── index.tsx                       # Redirect handler (cek status onboarding)
-│   ├── (onboarding)/                   # Flow Onboarding (Auth -> Quiz -> Reveal -> Preview)
-│   └── (tabs)/                         # Main Bottom Tabs (Dashboard, Transactions, Goals, Gold Vault)
+│   ├── (onboarding)/                   # Route Onboarding (Welcome -> Auth -> Quiz -> Reveal -> Preview)
+│   └── (tabs)/                         # Route Main Bottom Tabs (Dashboard, Transactions, Goals, Gold Vault)
 │
 ├── src/
-│   ├── core/                           # Utilitas lintas layer (Logger, Axios Client, Errors, Theme, Formatters)
+│   ├── core/                           # Shared infrastructure lintas fitur
+│   │   ├── di/                         # Manual Dependency Injection container
+│   │   ├── errors/                     # Custom Failure & Exception classes
+│   │   ├── logger/                     # Konfigurasi react-native-logs
+│   │   ├── network/                    # Axios client & interceptors
+│   │   ├── storage/                    # Singleton SQLite (expo-sqlite) & SecureStore wrapper
+│   │   ├── theme/                      # Konfigurasi warna Dark Mode Arthana
+│   │   └── utils/                      # Formatter Rupiah, tanggal, kalkulator gram
 │   │
-│   ├── domain/                         # LAYER 1: DOMAIN (Pure TypeScript, 0 external dependencies)
-│   │   ├── entities/                   # Model bisnis murni (UserProfile, Budget, Transaction, Goal, GoldAsset)
-│   │   ├── repositories/               # Kontrak interface repository (IBudgetRepository, dll.)
-│   │   └── usecases/                   # Aturan bisnis inti (EvaluateBudgetPersona, CalculateGoldPortfolio, dll.)
+│   ├── shared/                         # Komponen UI & hooks global yang dipakai banyak fitur
+│   │   ├── components/                 # Reusable HeroUI Native components (EmptyState, AppCard, dll.)
+│   │   └── hooks/                      # Custom hooks lintas modul
 │   │
-│   ├── data/                           # LAYER 2: DATA (Implementasi Repository, SQLite, SecureStore & Axios API)
-│   │   ├── datasources/                # Local (expo-sqlite, expo-secure-store) & Remote (Axios API harga emas)
-│   │   ├── models/                     # DTO & Mapper ke Domain Entities
-│   │   └── repositories/               # Implementasi nyata dari kontrak Domain
-│   │
-│   └── presentation/                   # LAYER 3: PRESENTATION (HeroUI Native, Expo Image, Screens, Zustand)
-│       ├── components/                 # Komponen UI reusable & Modal Bottom Sheets
-│       ├── screens/                    # Halaman utama aplikasi
-│       └── store/                      # Zustand Stores (State Management & Dependency Injection)
+│   └── features/                       # MODULAR FEATURES (Setiap fitur punya 3 layer mandiri)
+│       ├── onboarding/                 # Modul Welcome, Auth, & Budgeting Quiz
+│       │   ├── domain/                 # Entities (UserProfile, QuizAnswer), Repo Interfaces, UseCases (EvaluateBudgetPersona)
+│       │   ├── data/                   # DataSources (SecureStore), Models, Repo Implementations
+│       │   └── presentation/           # Screens (WelcomeScreen, QuizScreen, RevealScreen), Components, Zustand Store
+│       │
+│       ├── budget/                     # Modul Auto-Budget Setup & Dashboard Limit
+│       │   ├── domain/                 # Entities (Budget, CategoryLimit), Repo Interfaces, UseCases (GenerateAutoBudget)
+│       │   ├── data/                   # DataSources (SQLite), Models, Repo Implementations
+│       │   └── presentation/           # Screens (DashboardScreen, BudgetPreviewScreen), Components, Zustand Store
+│       │
+│       ├── transactions/               # Modul Core Cashflow Tracker & Impulse Detector
+│       │   ├── domain/                 # Entities (Transaction + isImpulsive), Repo Interfaces, UseCases
+│       │   ├── data/                   # DataSources (SQLite), Models, Repo Implementations
+│       │   └── presentation/           # Screens (TransactionsScreen), BottomSheets (AddTransactionSheet), Zustand Store
+│       │
+│       ├── goals/                      # Modul Sinking Funds & Financial Targets
+│       │   ├── domain/                 # Entities (Goal), Repo Interfaces, UseCases (CalculateRoutineContribution)
+│       │   ├── data/                   # DataSources (SQLite), Models, Repo Implementations
+│       │   └── presentation/           # Screens (GoalsScreen), BottomSheets (CreateGoalSheet), Zustand Store
+│       │
+│       ├── gold/                       # Modul Arthana Vault (Gold Tracker & Price Chart)
+│       │   ├── domain/                 # Entities (GoldAsset, GoldPrice), Repo Interfaces, UseCases (CalculateGoldPortfolio)
+│       │   ├── data/                   # DataSources (SQLite & Axios Gold Price API), Models, Repo Implementations
+│       │   └── presentation/           # Screens (GoldVaultScreen), BottomSheets (AddGoldSheet), Zustand Store
+│       │
+│       └── insight/                    # Modul Weekly Financial Insight (Arthana Pulse)
+│           ├── domain/                 # Entities (WeeklyInsight), Repo Interfaces, UseCases (GenerateWeeklyInsight)
+│           ├── data/                   # DataSources, Models, Repo Implementations
+│           └── presentation/           # Components (PulseInsightCard), Zustand Store
 │
 ├── global.css                          # Konfigurasi Tailwind CSS, Uniwind, & HeroUI Native
-└── tsconfig.json                       # Konfigurasi Path Aliases (@core, @domain, @data, @presentation)
+└── tsconfig.json                       # Konfigurasi Path Aliases (@core, @shared, @features)
 ```
 
 ### Aturan Ketergantungan (*Dependency Rule*)

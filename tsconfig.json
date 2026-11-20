@@ -6,12 +6,10 @@
       "@/*": ["./src/*"],
       "@core": ["./src/core"],
       "@core/*": ["./src/core/*"],
-      "@domain": ["./src/domain"],
-      "@domain/*": ["./src/domain/*"],
-      "@data": ["./src/data"],
-      "@data/*": ["./src/data/*"],
-      "@presentation": ["./src/presentation"],
-      "@presentation/*": ["./src/presentation/*"],
+      "@features": ["./src/features"],
+      "@features/*": ["./src/features/*"],
+      "@shared": ["./src/shared"],
+      "@shared/*": ["./src/shared/*"],
       "@/assets/*": ["./assets/*"]
     }
   },
