@@ -1,5 +1,5 @@
 import { FooterWrapper, ScreenWrapper } from "@/shared/components/layout";
-import { ArthanaButton, ArthanaLinkButton } from "@/shared/components/ui";
+import { ArthanaButton, ArthanaInlineActionText, ArthanaLinkButton } from "@/shared/components/ui";
 import { useRouter } from "expo-router";
 import { Text, View } from "react-native";
 
@@ -34,16 +34,11 @@ export function WelcomeScreen() {
           Lanjut, gas
         </ArthanaButton>
 
-        <View className="min-h-11 flex-row items-center justify-center gap-1.5">
-          <Text className="text-[14px] text-muted">Udah punya akun?</Text>
-          <ArthanaLinkButton
-            size="sm"
-            accessibilityLabel="Masuk ke akun"
-            onPress={() => router.push("/auth")}
-          >
-            Masuk
-          </ArthanaLinkButton>
-        </View>
+        <ArthanaInlineActionText
+          promptText="Udah punya akun?"
+          actionLabel="Masuk"
+          onActionPress={() => router.push("/auth")}
+        />
       </FooterWrapper>
     </ScreenWrapper>
   );
