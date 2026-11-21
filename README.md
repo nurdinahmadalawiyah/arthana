@@ -103,10 +103,20 @@ arthana/
 │   │   └── hooks/                      # Custom hooks lintas modul
 │   │
 │   └── features/                       # MODULAR FEATURES (Setiap fitur punya 3 layer mandiri)
-│       ├── onboarding/                 # Modul Welcome, Auth, & Budgeting Quiz
-│       │   ├── domain/                 # Entities (UserProfile, QuizAnswer), Repo Interfaces, UseCases (EvaluateBudgetPersona)
-│       │   ├── data/                   # DataSources (SecureStore), Models, Repo Implementations
-│       │   └── presentation/           # Screens (WelcomeScreen, QuizScreen, RevealScreen), Components, Zustand Store
+│       ├── welcome/                    # Modul entry screen dan CTA awal
+│       │   ├── domain/                 # Kontrak dan aturan bisnis welcome
+│       │   ├── data/                   # Datasource dan model welcome bila diperlukan
+│       │   └── presentation/           # WelcomeScreen dan ilustrasi
+│       │
+│       ├── auth/                       # Modul autentikasi pengguna
+│       │   ├── domain/                 # User/session entities, repo interfaces, use cases
+│       │   ├── data/                   # SecureStore, datasource, models, repo implementations
+│       │   └── presentation/           # AuthScreen, components, Zustand store
+│       │
+│       ├── quiz/                       # Modul kuis rekomendasi metode budgeting
+│       │   ├── domain/                 # QuizAnswer, persona entities, dan use cases
+│       │   ├── data/                   # Datasource dan model quiz
+│       │   └── presentation/           # QuizScreen, components, Zustand store
 │       │
 │       ├── budget/                     # Modul Auto-Budget Setup & Dashboard Limit
 │       │   ├── domain/                 # Entities (Budget, CategoryLimit), Repo Interfaces, UseCases (GenerateAutoBudget)

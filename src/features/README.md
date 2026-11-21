@@ -11,12 +11,16 @@ src/features/<feature>/
 
 Fitur yang disiapkan:
 
-- `onboarding`
+- `welcome`
+- `auth`
+- `quiz`
 - `budget`
 - `transactions`
 - `goals`
 - `gold`
 - `insight`
+
+`app/(onboarding)` adalah route group untuk mengelompokkan navigasi, bukan feature bisnis. Screen di dalamnya mengarah ke feature `welcome`, `auth`, dan `quiz`.
 
 Aturan dependensi:
 

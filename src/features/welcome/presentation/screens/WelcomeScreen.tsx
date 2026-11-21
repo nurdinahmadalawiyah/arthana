@@ -29,7 +29,7 @@ export function WelcomeScreen() {
         <ArthanaInlineActionText
           promptText={t("welcome.already_have_account")}
           actionLabel={t("welcome.login")}
-          onActionPress={() => router.push("/login")}
+          onActionPress={() => router.push("/auth")}
         />
       </FooterWrapper>
     </BodyWrapper>

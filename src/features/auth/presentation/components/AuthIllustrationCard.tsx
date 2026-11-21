@@ -4,7 +4,7 @@ import { Surface } from "heroui-native/surface";
 import { Ionicons } from "@expo/vector-icons";
 import { GoogleIcon } from "@/shared/components/icons/GoogleIcon";
 
-export function LoginIllustrationCard() {
+export function AuthIllustrationCard() {
   return (
     <View className="relative h-85 w-75 items-center justify-center overflow-hidden rounded-[28px] border border-border bg-surface">
       {/* Soft green circular decoration in the bottom right corner */}

@@ -1,5 +1,5 @@
-import { QuizPlaceholderScreen } from "@features/onboarding/presentation/screens/QuizPlaceholderScreen";
+import { QuizScreen } from "@features/quiz/presentation/screens/QuizScreen";
 
 export default function QuizRoute() {
-  return <QuizPlaceholderScreen />;
+  return <QuizScreen />;
 }

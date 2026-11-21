@@ -1,7 +1,7 @@
 import { Stack } from "expo-router";
 import { Text, View } from "react-native";
 
-export function QuizPlaceholderScreen() {
+export function QuizScreen() {
   return (
     <View className="flex-1 items-center justify-center bg-[#0B0D10] px-6">
       <Stack.Screen options={{ title: "Arthana Quiz" }} />

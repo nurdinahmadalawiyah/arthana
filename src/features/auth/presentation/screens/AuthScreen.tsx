@@ -7,9 +7,9 @@ import {
 import { ArthanaSocialButton, ArthanaInlineActionText } from "@/shared/components/ui";
 import { useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
-import { LoginIllustrationCard } from "../components/LoginIllustrationCard";
+import { AuthIllustrationCard } from "../components/AuthIllustrationCard";
 
-export function LoginScreen() {
+export function AuthScreen() {
   const router = useRouter();
   const { t } = useTranslation();
 
@@ -20,7 +20,7 @@ export function LoginScreen() {
       <HeroSplitLayout
         headline={t("login.headline")}
         subtitle={t("login.subtitle")}
-        illustration={<LoginIllustrationCard />}
+        illustration={<AuthIllustrationCard />}
       />
 
       <FooterWrapper>
