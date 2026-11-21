@@ -1,0 +1,10 @@
+{
+  "welcome": {
+    "headline": "Start budgeting\nwithout the drama.",
+    "subtitle": "A 2-minute quiz that reveals the budgeting method matching your spending style. No spreadsheet vibes.",
+    "cta_start": "Let's go",
+    "cta_a11y": "Start budgeting onboarding",
+    "already_have_account": "Already have an account?",
+    "login": "Sign in"
+  }
+}

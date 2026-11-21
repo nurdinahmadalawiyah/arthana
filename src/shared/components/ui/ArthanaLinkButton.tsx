@@ -16,7 +16,7 @@ export function ArthanaLinkButton({
       {...props}
     >
       {typeof children === "string" ? (
-        <LinkButton.Label className="font-semibold text-accent">{children}</LinkButton.Label>
+        <LinkButton.Label className="font-semibold text-success">{children}</LinkButton.Label>
       ) : (
         children
       )}

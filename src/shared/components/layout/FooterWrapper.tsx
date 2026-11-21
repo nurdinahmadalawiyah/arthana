@@ -11,7 +11,7 @@ interface FooterWrapperProps extends ViewProps {
 export function FooterWrapper({
   children,
   withBorder = false,
-  constraintOnTablet = false,
+  constraintOnTablet = true,
   className = "",
   style,
   ...rest

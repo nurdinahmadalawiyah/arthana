@@ -1,3 +1,4 @@
+import "@/core/i18n";
 import { useEffect } from "react";
 import { Stack } from "expo-router";
 import { HeroUINativeProvider } from "heroui-native";

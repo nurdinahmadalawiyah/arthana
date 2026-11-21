@@ -10,15 +10,19 @@ export function ArthanaButton({
   children,
   ...props
 }: ArthanaButtonProps) {
+  const isPrimary = variant === "primary";
+
   return (
     <Button
       variant={variant}
       size={size}
-      className={`w-full rounded-full ${className}`}
+      className={`w-full rounded-full ${isPrimary ? "bg-success" : ""} ${className}`}
       {...props}
     >
       {typeof children === "string" ? (
-        <Button.Label className="font-semibold">{children}</Button.Label>
+        <Button.Label className={`font-semibold ${isPrimary ? "text-success-foreground" : ""}`}>
+          {children}
+        </Button.Label>
       ) : (
         children
       )}

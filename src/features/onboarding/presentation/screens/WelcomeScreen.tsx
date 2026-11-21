@@ -4,10 +4,12 @@ import { useResponsive } from "@/shared/hooks/useResponsive";
 import { useRouter } from "expo-router";
 import { Text, View } from "react-native";
 import { WelcomeIllustrationCard } from "../components/WelcomeIllustrationCard";
+import { useTranslation } from "react-i18next";
 
 export function WelcomeScreen() {
   const router = useRouter();
   const { isTablet } = useResponsive();
+  const { t } = useTranslation();
 
   return (
     <ScreenWrapper contentClassName="md:px-14">
@@ -15,16 +17,15 @@ export function WelcomeScreen() {
         <View className="md:max-w-115 md:flex-1">
           <Text className="mb-6 text-[34px] font-extrabold leading-10 tracking-tight text-foreground md:text-[38px]">
             arthana
-            <Text className="text-accent">.</Text>
+            <Text className="text-success">.</Text>
           </Text>
 
-          <Text className="mb-5 text-[42px] font-extrabold leading-12 tracking-tight text-foreground md:text-[48px] md:leading-[54px]">
-            Mulai budgeting{"\n"}tanpa drama.
+          <Text className="mb-5 text-[42px] font-extrabold leading-12 tracking-tight text-foreground md:text-[48px] md:leading-13.5">
+            {t("welcome.headline")}
           </Text>
 
           <Text className="pr-2 text-[16px] font-normal leading-6 text-muted md:text-[18px] md:leading-7">
-            Kuis 2 menit, langsung keluar metode budgeting yang cocok sama gaya belanja kamu. No
-            spreadsheet vibes.
+            {t("welcome.subtitle")}
           </Text>
         </View>
 
@@ -39,15 +40,15 @@ export function WelcomeScreen() {
         <ArthanaButton
           variant="primary"
           size="md"
-          accessibilityLabel="Mulai onboarding budgeting"
+          accessibilityLabel={t("welcome.cta_a11y")}
           onPress={() => router.push("/quiz")}
         >
-          Lanjut, gas
+          {t("welcome.cta_start")}
         </ArthanaButton>
 
         <ArthanaInlineActionText
-          promptText="Udah punya akun?"
-          actionLabel="Masuk"
+          promptText={t("welcome.already_have_account")}
+          actionLabel={t("welcome.login")}
           onActionPress={() => router.push("/auth")}
         />
       </FooterWrapper>
