@@ -1,7 +1,12 @@
 import React, { type ComponentProps } from "react";
 import { Button } from "heroui-native/button";
 
-export type ArthanaButtonProps = ComponentProps<typeof Button>;
+type RawButtonProps = ComponentProps<typeof Button>;
+
+export type ArthanaButtonProps = Omit<RawButtonProps, "feedbackVariant" | "animation"> & {
+  feedbackVariant?: "scale-highlight" | "scale-ripple" | "scale";
+  animation?: RawButtonProps["animation"];
+};
 
 export function ArthanaButton({
   variant = "primary",
@@ -10,18 +15,15 @@ export function ArthanaButton({
   children,
   ...props
 }: ArthanaButtonProps) {
-
   return (
     <Button
       variant={variant}
       size={size}
       className={`w-full rounded-full ${className}`}
-      {...props}
+      {...(props as RawButtonProps)}
     >
       {typeof children === "string" ? (
-        <Button.Label className={`font-semibold`}>
-          {children}
-        </Button.Label>
+        <Button.Label className={`font-semibold`}>{children}</Button.Label>
       ) : (
         children
       )}
