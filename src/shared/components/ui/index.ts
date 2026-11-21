@@ -3,3 +3,4 @@ export { ArthanaSocialButton, type ArthanaSocialButtonProps, type SocialProvider
 export { ArthanaInlineActionText, type ArthanaInlineActionTextProps } from "./ArthanaInlineActionText";
 export { ArthanaLinkButton, LinkButton, type ArthanaLinkButtonProps } from "./ArthanaLinkButton";
 export { ArthanaHeadline, ArthanaLogo, ArthanaSubtitle } from "./ArthanaTypography";
+export { ArthanaProgressBar, type ArthanaProgressBarProps } from "./ArthanaProgressBar";

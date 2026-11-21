@@ -16,5 +16,142 @@
     "terms_prompt": "By continuing, you agree to our",
     "terms_service": "Terms of Service",
     "privacy_policy": "Privacy Policy"
+  },
+  "quiz": {
+    "back": "Back",
+    "next": "Next",
+    "finish": "See Result",
+    "questions": {
+      "q1": {
+        "question": "How do you usually manage your spending?",
+        "subtitle": "Pick the one that matches your monthly habit the most.",
+        "options": {
+          "kakeibo": {
+            "title": "Detailed Tracking",
+            "desc": "Every single dime spent gets logged in detail"
+          },
+          "rule_50_30_20": {
+            "title": "Big Buckets Split",
+            "desc": "Split into 3 buckets: needs, wants, savings. Simple & fast"
+          },
+          "zero_based": {
+            "title": "Precision Allocation",
+            "desc": "Make sure every dollar has a clear job & allocation"
+          },
+          "sinking_fund": {
+            "title": "Goal-Focused Saving",
+            "desc": "Save specifically for wishlists or certain milestones"
+          },
+          "fire_mode": {
+            "title": "Frugal Living",
+            "desc": "Live super frugally to achieve financial freedom"
+          }
+        }
+      },
+      "q2": {
+        "question": "When a payday sale or flash sale hits...",
+        "subtitle": "Be honest bestie, there are no wrong answers here!",
+        "options": {
+          "kakeibo": {
+            "title": "Rock Solid (Temptation-Proof)",
+            "desc": "Strong self-control, rarely tempted by discounts"
+          },
+          "rule_50_30_20": {
+            "title": "Slightly Tempted",
+            "desc": "Sometimes tempted to checkout, but still in control"
+          },
+          "zero_based": {
+            "title": "Impulsive (Needs Brakes)",
+            "desc": "Easy to checkout, so I need a strict tracking system"
+          },
+          "sinking_fund": {
+            "title": "Redirect to Wishlist",
+            "desc": "Better put promo money straight into my dream savings goal"
+          },
+          "fire_mode": {
+            "title": "Discount Immune",
+            "desc": "Never tempted at all because I'm laser-focused on investing"
+          }
+        }
+      },
+      "q3": {
+        "question": "What's your main financial priority right now?",
+        "subtitle": "So we can craft the best budgeting formula for you.",
+        "options": {
+          "kakeibo": {
+            "title": "Safe Daily Cashflow",
+            "desc": "Control daily expenses so I don't go broke mid-month"
+          },
+          "rule_50_30_20": {
+            "title": "Balance Life & Savings",
+            "desc": "Balance needs, guilt-free treats, and future savings"
+          },
+          "zero_based": {
+            "title": "Strict Dollar Discipline",
+            "desc": "Disciplined allocation for every dollar with zero leaks"
+          },
+          "sinking_fund": {
+            "title": "Dream Goal Fund",
+            "desc": "Save up for travel, wedding, gadgets, or wishlists"
+          },
+          "fire_mode": {
+            "title": "Financial Freedom",
+            "desc": "Long-term financial independence & early retirement"
+          }
+        }
+      },
+      "q4": {
+        "question": "You feel most comfortable with a budgeting style that is...",
+        "subtitle": "Comfort is the key to staying consistent with it.",
+        "options": {
+          "rule_50_30_20": {
+            "title": "Simple & Fast",
+            "desc": "Easy method, zero hassle, and quick to practice"
+          },
+          "kakeibo": {
+            "title": "Detailed & Disciplined",
+            "desc": "Neat logging, structured, and highly disciplined"
+          },
+          "zero_based": {
+            "title": "Every Dollar Has a Job",
+            "desc": "Every single dollar is assigned a category down to zero"
+          },
+          "sinking_fund": {
+            "title": "Flexible with Targets",
+            "desc": "Flexible day-to-day, with clear end-of-month targets"
+          },
+          "fire_mode": {
+            "title": "Extreme Frugality",
+            "desc": "Focus on maximum saving for future milestones"
+          }
+        }
+      },
+      "q5": {
+        "question": "Your main focus in managing money is...",
+        "subtitle": "Last question! Your mindset determines the best method.",
+        "options": {
+          "kakeibo": {
+            "title": "Curb Daily Spending",
+            "desc": "Focus on cutting down unnecessary daily expenses"
+          },
+          "sinking_fund": {
+            "title": "Short-Term Saving",
+            "desc": "Build savings for upcoming needs and short-term goals"
+          },
+          "rule_50_30_20": {
+            "title": "Harmony Now & Later",
+            "desc": "Balance enjoying life today while saving for tomorrow"
+          },
+          "zero_based": {
+            "title": "100% Full Control",
+            "desc": "Have complete control over every dollar flowing in and out"
+          },
+          "fire_mode": {
+            "title": "Early Retirement Investing",
+            "desc": "Invest aggressively for financial freedom & early retirement"
+          }
+        }
+      }
+    }
   }
 }

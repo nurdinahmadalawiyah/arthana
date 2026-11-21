@@ -16,5 +16,142 @@
     "terms_prompt": "Dengan lanjut, kamu setuju sama",
     "terms_service": "Syarat Layanan",
     "privacy_policy": "Kebijakan Privasi"
+  },
+  "quiz": {
+    "back": "Kembali",
+    "next": "Lanjut",
+    "finish": "Lihat Hasil",
+    "questions": {
+      "q1": {
+        "question": "Gimana cara kamu biasanya ngatur pengeluaran?",
+        "subtitle": "Pilih yang paling relate sama kebiasaanmu tiap bulan.",
+        "options": {
+          "kakeibo": {
+            "title": "Catat Rinci",
+            "desc": "Tiap jajan seribu perak pun masuk catatan detail"
+          },
+          "rule_50_30_20": {
+            "title": "Bagi Kategori Besar",
+            "desc": "Bagi 3 pos aja: wajib, jajan, nabung. Simpel & sat-set"
+          },
+          "zero_based": {
+            "title": "Alokasi Presisi",
+            "desc": "Pastikan setiap rupiah ada tugas & alokasi jelasnya"
+          },
+          "sinking_fund": {
+            "title": "Fokus Target Khusus",
+            "desc": "Nabung spesifik buat wishlist atau goals tertentu"
+          },
+          "fire_mode": {
+            "title": "Frugal Living",
+            "desc": "Hidup hemat pol-polan demi kebebasan finansial"
+          }
+        }
+      },
+      "q2": {
+        "question": "Kalo ada promo tanggal kembar / flash sale...",
+        "subtitle": "Jujur aja bestie, nggak ada jawaban salah kok!",
+        "options": {
+          "kakeibo": {
+            "title": "Batu Karang (Anti Goda)",
+            "desc": "Tahan diri, jarang banget tergoda diskon"
+          },
+          "rule_50_30_20": {
+            "title": "Kena Racun Dikit",
+            "desc": "Kadang tergoda checkout, tapi masih bisa kontrol"
+          },
+          "zero_based": {
+            "title": "Khilaf Butuh Rem",
+            "desc": "Gampang checkout, makanya butuh sistem catat ketat"
+          },
+          "sinking_fund": {
+            "title": "Alihkan ke Wishlist",
+            "desc": "Duit promo mending diarahkan ke target nabung impian"
+          },
+          "fire_mode": {
+            "title": "Kebal Diskon",
+            "desc": "Nggak pernah tergoda sama sekali karena fokus investasi"
+          }
+        }
+      },
+      "q3": {
+        "question": "Apa prioritas finansial utama kamu sekarang?",
+        "subtitle": "Biar kita bisa racik formula budgeting yang paling pas.",
+        "options": {
+          "kakeibo": {
+            "title": "Cashflow Harian Aman",
+            "desc": "Kontrol pengeluaran harian biar nggak boncos di tengah bulan"
+          },
+          "rule_50_30_20": {
+            "title": "Seimbang Hidup & Nabung",
+            "desc": "Balance kebutuhan, jajan/keinginan, dan tabungan masa depan"
+          },
+          "zero_based": {
+            "title": "Disiplin Alokasi Rupiah",
+            "desc": "Disiplin alokasi tiap rupiah tanpa ada bocor halus"
+          },
+          "sinking_fund": {
+            "title": "Dana Khusus Impian",
+            "desc": "Nabung buat liburan, nikah, gadget, atau wishlist impian"
+          },
+          "fire_mode": {
+            "title": "Financial Freedom",
+            "desc": "Kebebasan finansial jangka panjang & pensiun dini"
+          }
+        }
+      },
+      "q4": {
+        "question": "Kamu lebih nyaman dengan gaya budgeting yang...",
+        "subtitle": "Kenyamanan kamu adalah kunci biar konsisten jalaninnya.",
+        "options": {
+          "rule_50_30_20": {
+            "title": "Sederhana & Cepat",
+            "desc": "Metode simpel, anti ribet, dan sat-set dipraktekkan"
+          },
+          "kakeibo": {
+            "title": "Detail & Disiplin",
+            "desc": "Pencatatan rapi, terstruktur, dan disiplin tinggi"
+          },
+          "zero_based": {
+            "title": "Tiap Rupiah Ada Tugas",
+            "desc": "Setiap rupiah wajib punya pos alokasi sampai nol"
+          },
+          "sinking_fund": {
+            "title": "Fleksibel Ber-Target",
+            "desc": "Fleksibel hari ke hari, tapi target akhir bulan jelas"
+          },
+          "fire_mode": {
+            "title": "Hemat Ekstrem (Frugal)",
+            "desc": "Fokus penghematan maksimal demi target masa depan"
+          }
+        }
+      },
+      "q5": {
+        "question": "Fokus utama kamu dalam mengatur uang adalah...",
+        "subtitle": "Pertanyaan terakhir! Mindset kamu nentuin metode terbaik.",
+        "options": {
+          "kakeibo": {
+            "title": "Rem Pengeluaran Harian",
+            "desc": "Fokus kurangi pengeluaran harian yang nggak perlu"
+          },
+          "sinking_fund": {
+            "title": "Nabung Jangka Pendek",
+            "desc": "Kumpulin tabungan buat kebutuhan dan goals jangka pendek"
+          },
+          "rule_50_30_20": {
+            "title": "Harmonis Sekarang & Nanti",
+            "desc": "Seimbangin nikmatin hidup sekarang & tetap nabung masa depan"
+          },
+          "zero_based": {
+            "title": "Kontrol Penuh 100%",
+            "desc": "Punya kontrol penuh atas setiap rupiah yang mengalir"
+          },
+          "fire_mode": {
+            "title": "Investasi Pensiun Dini",
+            "desc": "Investasi besar-besaran buat kebebasan finansial & pensiun dini"
+          }
+        }
+      }
+    }
   }
 }
