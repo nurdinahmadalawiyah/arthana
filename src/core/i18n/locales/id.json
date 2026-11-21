@@ -18,6 +18,19 @@
     "privacy_policy": "Kebijakan Privasi"
   },
   "quiz": {
+    "intro": {
+      "back_a11y": "Kembali ke halaman sebelumnya",
+      "badge": "ARTHANA QUIZ",
+      "headline": "Kenali gaya\ncuan kamu.",
+      "subtitle": "Jawab 5 pertanyaan singkat untuk menemukan metode budgeting dan Financial Profile Badge yang paling pas buat kamu.",
+      "highlights": {
+        "duration": "Cuma 1 menit • 5 pertanyaan ringan",
+        "persona": "Dapat Financial Profile Badge personal",
+        "autobudget": "Langsung jadi template budget otomatis"
+      },
+      "cta_start": "Mulai Quiz",
+      "cta_a11y": "Mulai Arthana Quiz sekarang"
+    },
     "back": "Kembali",
     "next": "Lanjut",
     "finish": "Lihat Hasil",

@@ -21,7 +21,7 @@ export function WelcomeScreen() {
           variant="primary"
           size="md"
           accessibilityLabel={t("welcome.cta_a11y")}
-          onPress={() => router.push("/quiz")}
+          onPress={() => router.push("/quiz-intro")}
         >
           {t("welcome.cta_start")}
         </ArthanaButton>

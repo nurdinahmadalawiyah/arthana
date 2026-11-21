@@ -18,6 +18,19 @@
     "privacy_policy": "Privacy Policy"
   },
   "quiz": {
+    "intro": {
+      "back_a11y": "Go back to previous screen",
+      "badge": "ARTHANA QUIZ",
+      "headline": "Discover your\nmoney style.",
+      "subtitle": "Answer 5 quick questions to find the budgeting method and Financial Profile Badge tailored just for you.",
+      "highlights": {
+        "duration": "Takes 1 minute • 5 bite-sized questions",
+        "persona": "Unlock your personal Financial Profile Badge",
+        "autobudget": "Instant auto-generated budget template"
+      },
+      "cta_start": "Start Quiz",
+      "cta_a11y": "Start Arthana Quiz now"
+    },
     "back": "Back",
     "next": "Next",
     "finish": "See Result",
