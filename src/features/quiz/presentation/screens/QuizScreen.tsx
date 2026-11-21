@@ -48,7 +48,7 @@ export function QuizScreen() {
     if (currentStep < totalSteps) {
       setCurrentStep((prev) => prev + 1);
     } else {
-      // router.push("/reveal");
+      router.push("/quiz-loading");
     }
   };
 

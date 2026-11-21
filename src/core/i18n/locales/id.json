@@ -165,6 +165,18 @@
           }
         }
       }
+    },
+    "loading": {
+      "completed_badge": "{{current}}/{{total}} selesai",
+      "eyebrow": "MEMBACA POLA KEUANGANMU",
+      "headline": "Sedang meracik\nprofil finansialmu",
+      "subtitle": "Tunggu sebentar. Kami sedang mencocokkan jawabanmu dengan badge yang paling relate.",
+      "stages": {
+        "analyzing": "Menganalisis jawabanmu...",
+        "matching": "Mencocokkan gaya spending & tujuan...",
+        "crafting": "Menyiapkan badge & template budget..."
+      },
+      "footer_note": "Badge & profil finansialmu akan muncul sebentar lagi."
     }
   }
 }

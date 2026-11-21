@@ -165,6 +165,18 @@
           }
         }
       }
+    },
+    "loading": {
+      "completed_badge": "{{current}}/{{total}} completed",
+      "eyebrow": "READING YOUR MONEY PATTERNS",
+      "headline": "Crafting your\nfinancial profile",
+      "subtitle": "Hang tight. We're matching your answers with the badge that fits you best.",
+      "stages": {
+        "analyzing": "Analyzing your answers...",
+        "matching": "Matching your spending style & goals...",
+        "crafting": "Preparing your badge & budget template..."
+      },
+      "footer_note": "Your financial profile & badge will appear shortly."
     }
   }
 }
