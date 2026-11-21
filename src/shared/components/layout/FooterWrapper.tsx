@@ -2,7 +2,7 @@ import React from "react";
 import { View, ViewProps } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
-interface FooterWrapperProps extends ViewProps {
+export interface FooterWrapperProps extends ViewProps {
   children: React.ReactNode;
   withBorder?: boolean;
   constraintOnTablet?: boolean;
@@ -20,13 +20,11 @@ export function FooterWrapper({
 
   return (
     <View
-      className={`pt-3 ${withBorder ? "border-t border-border" : ""} ${className}`}
+      className={`w-full items-center pt-3 ${withBorder ? "border-t border-border" : ""} ${className}`}
       style={[{ paddingBottom: Math.max(insets.bottom, 16) }, style]}
       {...rest}
     >
-      <View className={`w-full gap-3 ${constraintOnTablet ? "md:max-w-100 md:self-center" : ""}`}>
-        {children}
-      </View>
+      <View className={`w-full gap-3 ${constraintOnTablet ? "md:max-w-100" : ""}`}>{children}</View>
     </View>
   );
 }

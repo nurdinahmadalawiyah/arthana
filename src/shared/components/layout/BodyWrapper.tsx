@@ -3,14 +3,14 @@ import { ScrollView, View, ViewProps } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
-interface ScreenWrapperProps extends ViewProps {
+export interface BodyWrapperProps extends ViewProps {
   children: React.ReactNode;
   scrollable?: boolean;
   noPadding?: boolean;
   contentClassName?: string;
 }
 
-export function ScreenWrapper({
+export function BodyWrapper({
   children,
   scrollable = false,
   noPadding = false,
@@ -18,7 +18,7 @@ export function ScreenWrapper({
   contentClassName = "",
   style,
   ...rest
-}: ScreenWrapperProps) {
+}: BodyWrapperProps) {
   const insets = useSafeAreaInsets();
   const horizontalPadding = noPadding ? "" : "px-6";
 

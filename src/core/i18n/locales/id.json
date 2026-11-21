@@ -6,5 +6,15 @@
     "cta_a11y": "Mulai onboarding budgeting",
     "already_have_account": "Udah punya akun?",
     "login": "Masuk"
+  },
+  "login": {
+    "back_a11y": "Kembali ke halaman sebelumnya",
+    "headline": "Masuk dulu,\nyuk.",
+    "subtitle": "Cuma butuh akun Google. Nggak perlu bikin password, nggak perlu hafal apa-apa.",
+    "cta_login": "Lanjut dengan Google",
+    "cta_a11y": "Masuk dengan akun Google",
+    "terms_prompt": "Dengan lanjut, kamu setuju sama",
+    "terms_service": "Syarat Layanan",
+    "privacy_policy": "Kebijakan Privasi"
   }
 }

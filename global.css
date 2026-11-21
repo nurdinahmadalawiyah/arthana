@@ -4,3 +4,17 @@
 @import "heroui-native/styles";
 
 @source './node_modules/heroui-native/lib';
+
+@layer theme {
+  :root {
+    @variant light {
+      --accent: var(--success);
+      --accent-foreground: var(--success-foreground);
+    }
+
+    @variant dark {
+      --accent: var(--success);
+      --accent-foreground: var(--success-foreground);
+    }
+  }
+}

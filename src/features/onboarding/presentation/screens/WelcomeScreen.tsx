@@ -1,4 +1,4 @@
-import { FooterWrapper, ScreenWrapper } from "@/shared/components/layout";
+import { BodyWrapper, FooterWrapper } from "@/shared/components/layout";
 import { ArthanaButton, ArthanaInlineActionText } from "@/shared/components/ui";
 import { useResponsive } from "@/shared/hooks/useResponsive";
 import { useRouter } from "expo-router";
@@ -12,7 +12,7 @@ export function WelcomeScreen() {
   const { t } = useTranslation();
 
   return (
-    <ScreenWrapper contentClassName="md:px-14">
+    <BodyWrapper contentClassName="md:px-14">
       <View className="flex-1 justify-center pb-12 md:flex-row md:items-center md:justify-between md:gap-12 md:pb-0">
         <View className="md:max-w-115 md:flex-1">
           <Text className="mb-6 text-[34px] font-extrabold leading-10 tracking-tight text-foreground md:text-[38px]">
@@ -49,9 +49,9 @@ export function WelcomeScreen() {
         <ArthanaInlineActionText
           promptText={t("welcome.already_have_account")}
           actionLabel={t("welcome.login")}
-          onActionPress={() => router.push("/auth")}
+          onActionPress={() => router.push("/login")}
         />
       </FooterWrapper>
-    </ScreenWrapper>
+    </BodyWrapper>
   );
 }
