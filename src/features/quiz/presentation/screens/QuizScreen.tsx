@@ -1,5 +1,4 @@
 import React, { useMemo, useState } from "react";
-import { Text, View } from "react-native";
 import { useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { Ionicons } from "@expo/vector-icons";
@@ -65,15 +64,14 @@ export function QuizScreen() {
       footer={
         <FooterWrapper direction="row" alignOnTablet="end">
           <ArthanaButton
+            isIconOnly
             variant="secondary"
             size="md"
-            className="flex-1 bg-surface"
+            accessibilityLabel={t("quiz.back")}
+            className="bg-surface"
             onPress={handleBack}
           >
-            <View className="flex-row items-center justify-center gap-2">
-              <Ionicons name="arrow-back" size={16} color="#F9FAFB" />
-              <Text className="text-[15px] font-semibold text-foreground">{t("quiz.back")}</Text>
-            </View>
+            <Ionicons name="arrow-back" size={20} color="#F9FAFB" />
           </ArthanaButton>
 
           <ArthanaButton

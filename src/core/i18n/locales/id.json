@@ -1,7 +1,7 @@
 {
   "welcome": {
     "headline": "Mulai budgeting\ntanpa drama.",
-    "subtitle": "Kuis 2 menit, langsung keluar metode budgeting yang cocok sama gaya belanja kamu. No spreadsheet vibes.",
+    "subtitle": "Kuis singkat, langsung keluar metode budgeting yang cocok sama gaya belanja kamu. No spreadsheet vibes.",
     "cta_start": "Lanjut, gas",
     "cta_a11y": "Mulai onboarding budgeting",
     "already_have_account": "Udah punya akun?",
@@ -24,7 +24,7 @@
       "headline": "Kenali gaya\ncuan kamu.",
       "subtitle": "Jawab 5 pertanyaan singkat untuk menemukan metode budgeting dan Financial Profile Badge yang paling pas buat kamu.",
       "highlights": {
-        "duration": "Cuma 1 menit • 5 pertanyaan ringan",
+        "duration": "Cuma beberapa menit • 5 pertanyaan ringan",
         "persona": "Dapat Financial Profile Badge personal",
         "autobudget": "Langsung jadi template budget otomatis"
       },

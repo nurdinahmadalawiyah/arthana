@@ -49,7 +49,7 @@ export function AppBarWrapper({
                 variant="secondary"
                 size="md"
                 accessibilityLabel={backAccessibilityLabel}
-                className="h-11 w-11 rounded-full border border-border bg-surface"
+                className="h-11 w-11 rounded-full bg-surface"
                 onPress={handleBack}
               >
                 <Ionicons name="arrow-back" size={20} color="#F9FAFB" />

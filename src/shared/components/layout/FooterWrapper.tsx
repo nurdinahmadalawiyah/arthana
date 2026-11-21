@@ -32,7 +32,7 @@ export function FooterWrapper({
       {...rest}
     >
       <View
-        className={`w-full gap-3 ${directionClass} ${constraintOnTablet ? "md:max-w-100" : ""}`}
+        className={`w-full gap-3 pb-3 ${directionClass} ${constraintOnTablet ? "md:max-w-100" : ""}`}
       >
         {children}
       </View>

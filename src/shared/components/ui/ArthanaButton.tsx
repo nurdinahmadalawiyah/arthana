@@ -11,6 +11,7 @@ export type ArthanaButtonProps = Omit<RawButtonProps, "feedbackVariant" | "anima
 export function ArthanaButton({
   variant = "primary",
   size = "lg",
+  isIconOnly = false,
   className = "",
   children,
   ...props
@@ -19,7 +20,8 @@ export function ArthanaButton({
     <Button
       variant={variant}
       size={size}
-      className={`w-full rounded-full ${className}`}
+      isIconOnly={isIconOnly}
+      className={`${isIconOnly ? "" : "w-full "}rounded-full ${className}`}
       {...(props as RawButtonProps)}
     >
       {typeof children === "string" ? (
