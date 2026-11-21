@@ -25,9 +25,15 @@ export function QuizProfileLoadingView({
 
   return (
     <View className="flex-1 justify-between pb-10 pt-2">
-      <View className="flex-row items-center justify-between">
-        <ArthanaLogo className="mb-0 text-[20px] leading-6 md:text-[22px] md:leading-7" />
-        <Text className="text-[13px] font-medium text-muted md:text-[14px]">
+      <View className="flex-row items-center justify-between py-2">
+        <ArthanaLogo
+          style={{ marginBottom: 0, lineHeight: 30, includeFontPadding: false }}
+          className="text-[20px] md:text-[22px]"
+        />
+        <Text
+          style={{ lineHeight: 30, includeFontPadding: false }}
+          className="text-[13px] font-medium text-muted md:text-[14px]"
+        >
           {completedBadgeText}
         </Text>
       </View>
