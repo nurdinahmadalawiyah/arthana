@@ -5,11 +5,13 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 interface FooterWrapperProps extends ViewProps {
   children: React.ReactNode;
   withBorder?: boolean;
+  constraintOnTablet?: boolean;
 }
 
 export function FooterWrapper({
   children,
   withBorder = false,
+  constraintOnTablet = false,
   className = "",
   style,
   ...rest
@@ -18,11 +20,13 @@ export function FooterWrapper({
 
   return (
     <View
-      className={`gap-3 pt-3 ${withBorder ? "border-t border-border" : ""} ${className}`}
+      className={`pt-3 ${withBorder ? "border-t border-border" : ""} ${className}`}
       style={[{ paddingBottom: Math.max(insets.bottom, 16) }, style]}
       {...rest}
     >
-      {children}
+      <View className={`w-full gap-3 ${constraintOnTablet ? "md:max-w-100 md:self-center" : ""}`}>
+        {children}
+      </View>
     </View>
   );
 }
